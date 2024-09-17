@@ -8,7 +8,6 @@ export default function Meme() {
     })
     const [allMemes, setAllMemes] = React.useState([])
 
-    // Correct useEffect with async function inside it
     React.useEffect(() => {
         async function fetchMemes() {
             const res = await fetch("https://api.imgflip.com/get_memes")
